@@ -29,7 +29,7 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
         try {
             final UsernameAndPasswordAuthenticationRequest authenticationRequest = new ObjectMapper().readValue(request.getInputStream(), UsernameAndPasswordAuthenticationRequest.class);
             final Authentication authentication = new UsernamePasswordAuthenticationToken(
-                    authenticationRequest.getUserName(),
+                    authenticationRequest.getName(),
                     authenticationRequest.getPassword()
             );
 

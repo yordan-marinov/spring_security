@@ -14,8 +14,8 @@ public class StudentService {
     private ModelMapper modelMapper;
 
     List<Student> students = List.of(
-            new Student("81f2c154-47e4-4417-8ff1-7d41791a5215", "Jordan"),
-            new Student("91f2c154-47e4-4417-8ff1-7d41791a5215", "Martin")
+            new Student("81f2c154-47e4-4417-8ff1-7d41791a5215", "Jordan", "password"),
+            new Student("91f2c154-47e4-4417-8ff1-7d41791a5215", "Martin", "password")
     );
 
     public Student getStudent(String studentId) {
